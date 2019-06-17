@@ -15,4 +15,5 @@ This project was originally written by Phil Sturgeon, however his involvement ha
 ###  Requirements
 
 PHP 5.4 or greater
+
 CodeIgniter 3.0+

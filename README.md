@@ -44,9 +44,21 @@ This project was originally written by Phil Sturgeon, however his involvement ha
    -- *DDL tersedia di dalam file /application/config/rest.php
 ```
 
+### Membuat key
+
+Telah disediakan Controller untuk menangani pembuatan dan manajemen key melalui *controller* `/api/Key.php`
+
+Untuk membuat key baru, bisa lengsung dengan menambahakan record baru dalam tabel `keys` pada database,
+atau lakukan *request* API berikut ini dengan metode PUT (bisa menggunakan Postman)
+
+```
+ http://demo1.mdv.local/api/key
+```
+
+
 ### Enable-kan fungsi key
 
-edit baris yang mengatur `rest_enable_keys` dalam file `/application/config/rest.php`,
+Edit baris yang mengatur `rest_enable_keys` dalam file `/application/config/rest.php`,
 dan ganti valuenya  menjadi `TRUE`
 
 ```php
@@ -123,10 +135,10 @@ dan ganti valuenya  menjadi `TRUE`
 ### Request API dengan key enabled
 
 ```
-http://demo1.mdv.local/mdv/test/API-KEY/0s4owc4k0s448swwg08o0cckggo848c0kk0k88w4
+  http://demo1.mdv.local/mdv/test/X-API-KEY/0s4owc4k0s448swwg08o0cckggo848c0kk0k88w4
 ```
 
- *demo1.mdv.local hanya contoh, disesuikan dengan domain webserver yang digunakan *
+ *demo1.mdv.local hanya contoh, disesuikan dengan domain webserver yang digunakan
 
 
 ## Documentation / Tutorials

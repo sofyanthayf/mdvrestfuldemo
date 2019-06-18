@@ -20,7 +20,7 @@ This project was originally written by Phil Sturgeon, however his involvement ha
 
 ## Mengaktifkan Key
 
-### menyiapkan tabel database untuk Keys
+### Menyiapkan tabel database untuk Keys
 
 ```
    CREATE TABLE `keys` (
@@ -39,7 +39,7 @@ This project was originally written by Phil Sturgeon, however his involvement ha
    -- * DDL ada di dalam file /application/config/rest.php
 ```
 
-### enable-kan fungsi key
+### Enable-kan fungsi key
 
 edit baris yang mengatur `rest_enable_keys` dalam file `/application/config/rest.php`,
 dan ganti valuenya  menjadi `TRUE`
@@ -51,7 +51,10 @@ dan ganti valuenya  menjadi `TRUE`
 
 ## Mengaktifkan Logging
 
-### menyiapkan tabel database untuk logging
+Dengan mengaktifkan funsi logging maka provider API bisa melakukan penmantauan dan melakukan analisis
+atas penggunaan API dan key-nya oleh pengguna
+
+### Menyiapkan tabel database untuk Logging
 
 ```
    CREATE TABLE `logs` (
@@ -69,4 +72,13 @@ dan ganti valuenya  menjadi `TRUE`
    ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
    -- * DDL ada di dalam file /application/config/rest.php
+```
+
+### Enable-kan fungsi Key-logging
+
+edit baris yang mengatur `rest_enable_logging` dalam file `/application/config/rest.php`,
+dan ganti valuenya  menjadi `TRUE`
+
+```
+    $config['rest_enable_logging'] = TRUE;
 ```

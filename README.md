@@ -48,7 +48,7 @@ This project was originally written by Phil Sturgeon, however his involvement ha
 
 Telah disediakan Controller untuk menangani pembuatan dan manajemen key melalui *controller* `/api/Key.php`
 
-Untuk membuat key baru, bisa langsung dengan menambahakan record baru ke dalam tabel `keys` pada database,
+Untuk membuat key baru, bisa langsung dengan menambahkan *record* baru ke dalam tabel `keys` pada database,
 atau lakukan *request* API berikut ini dengan metode PUT (bisa menggunakan Postman)
 
 ```

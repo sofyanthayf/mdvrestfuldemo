@@ -1,6 +1,6 @@
 # Demo REST Server dengan implementasi key
 
-Materi demo yang disajikan dalam sharing session **Tech Lineup DiLo Makassar**, Kamis 20 Juni 2019, di Makassar Digital Valley.
+Materi demo yang disajikan dalam *sharing session* **Tech Lineup DiLo Makassar**, Kamis 20 Juni 2019, di Makassar Digital Valley.
 
 Demo menggunakan **RESTful Server** berbasis **PHP framework - CodeIgniter** dengan pertimbangan lebih mudah untuk dipelajari
 
@@ -18,6 +18,9 @@ This project was originally written by Phil Sturgeon, however his involvement ha
 
 1. PHP 5.4 or greater
 2. CodeIgniter 3.0+
+
+
+*Cloning repository* ini akan memberikan Anda **Codeigniter 3.1.10** dan **RESTful Server** yang siap untuk digunakan (konfigurasi database dan ```base_url``` menggunakan *server environments*, bisa dimodifikasi)
 
 
 ## Mengaktifkan Key
@@ -84,6 +87,7 @@ dan ganti valuenya  menjadi `TRUE`
 ```php
     $config['rest_enable_logging'] = TRUE;
 ```
+
 
 
 ## Documentation / Tutorials

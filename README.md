@@ -1,6 +1,8 @@
 # Demo REST Server dengan implementasi key
 
-Materi demo yang disajikan dalam presentasi Tech Lineup DiLo Makassar, Kamis 20 Juni 2019, di Makassar Digital Valley
+Materi demo yang disajikan dalam sharing session *Tech Lineup DiLo Makassar*, Kamis 20 Juni 2019, di Makassar Digital Valley.
+
+Demo menggunakan *RESTful Server* berbasis *PHP framework CodeIgniter* dengan pertimbangan lebih mudah untuk dipelajari
 
 
 ## Download RESTful untuk CI
@@ -36,7 +38,7 @@ This project was originally written by Phil Sturgeon, however his involvement ha
    ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
-   -- * DDL ada di dalam file /application/config/rest.php
+   -- *DDL tersedia di dalam file /application/config/rest.php
 ```
 
 ### Enable-kan fungsi key
@@ -51,7 +53,7 @@ dan ganti valuenya  menjadi `TRUE`
 
 ## Mengaktifkan Logging
 
-Dengan mengaktifkan funsi logging maka provider API bisa melakukan penmantauan dan melakukan analisis
+Dengan mengaktifkan fungsi logging maka provider API bisa melakukan penmantauan dan melakukan analisis
 atas penggunaan API dan key-nya oleh pengguna
 
 ### Menyiapkan tabel database untuk Logging
@@ -71,7 +73,7 @@ atas penggunaan API dan key-nya oleh pengguna
        PRIMARY KEY (`id`)
    ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-   -- * DDL ada di dalam file /application/config/rest.php
+   -- *DDL tersedia di dalam file /application/config/rest.php
 ```
 
 ### Enable-kan fungsi Key-logging

@@ -88,6 +88,45 @@ dan ganti valuenya  menjadi `TRUE`
     $config['rest_enable_logging'] = TRUE;
 ```
 
+## Contoh Method
+
+### Controller Mdv.php
+```php
+
+  use Restserver\Libraries\REST_Controller;
+  defined('BASEPATH') OR exit('No direct script access allowed');
+
+  require APPPATH . 'libraries/REST_Controller.php';
+  require APPPATH . 'libraries/Format.php';
+
+  class Mdv extends REST_Controller {
+
+    protected $methods = [
+            'test_get' => ['level' => 1],
+        ];
+
+    public function test_get(){
+      $this->response( ['status'=>'OK'], REST_Controller::HTTP_OK );
+
+    }
+
+  }
+
+```
+
+### Request API tanpa key enabled
+
+```
+  http://demo1.mdv.local/mdv/test
+```
+
+### Request API dengan key enabled
+
+```
+http://demo1.mdv.local/mdv/test/API-KEY/0s4owc4k0s448swwg08o0cckggo848c0kk0k88w4
+```
+
+* *demo1.mdv.local* hanya contoh, disesuikan dengan domain webserver yang digunakan *
 
 
 ## Documentation / Tutorials

@@ -1,8 +1,8 @@
 # Demo REST Server dengan implementasi key
 
-Materi demo yang disajikan dalam sharing session *Tech Lineup DiLo Makassar*, Kamis 20 Juni 2019, di Makassar Digital Valley.
+Materi demo yang disajikan dalam sharing session **Tech Lineup DiLo Makassar**, Kamis 20 Juni 2019, di Makassar Digital Valley.
 
-Demo menggunakan *RESTful Server* berbasis *PHP framework CodeIgniter* dengan pertimbangan lebih mudah untuk dipelajari
+Demo menggunakan **RESTful Server** berbasis **PHP framework - CodeIgniter** dengan pertimbangan lebih mudah untuk dipelajari
 
 
 ## Download RESTful untuk CI
@@ -24,7 +24,7 @@ This project was originally written by Phil Sturgeon, however his involvement ha
 
 ### Menyiapkan tabel database untuk Keys
 
-```
+```sql
    CREATE TABLE `keys` (
        `id` INT(11) NOT NULL AUTO_INCREMENT,
        `user_id` INT(11) NOT NULL,
@@ -46,7 +46,7 @@ This project was originally written by Phil Sturgeon, however his involvement ha
 edit baris yang mengatur `rest_enable_keys` dalam file `/application/config/rest.php`,
 dan ganti valuenya  menjadi `TRUE`
 
-```
+```php
     $config['rest_enable_keys'] = TRUE;
 ```
 
@@ -58,7 +58,7 @@ atas penggunaan API dan key-nya oleh pengguna
 
 ### Menyiapkan tabel database untuk Logging
 
-```
+```sql
    CREATE TABLE `logs` (
        `id` INT(11) NOT NULL AUTO_INCREMENT,
        `uri` VARCHAR(255) NOT NULL,
@@ -81,6 +81,11 @@ atas penggunaan API dan key-nya oleh pengguna
 edit baris yang mengatur `rest_enable_logging` dalam file `/application/config/rest.php`,
 dan ganti valuenya  menjadi `TRUE`
 
-```
+```php
     $config['rest_enable_logging'] = TRUE;
 ```
+
+
+## Documentation / Tutorials
+
+* [NetTuts: Working with RESTful Services in CodeIgniter](http://net.tutsplus.com/tutorials/php/working-with-restful-services-in-codeigniter-2/)
